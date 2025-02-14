@@ -15,7 +15,7 @@ export default function QRForm({ existingCode = "", existingUrl = "", onSuccess 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    const API_URL = "http://localhost:3060"; 
+    const API_URL = "https://qrapivercel.vercel.app"; 
 
     const response = await fetch(`${API_URL}/api/qr`, {
       method: "POST",

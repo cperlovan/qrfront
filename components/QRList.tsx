@@ -31,7 +31,7 @@ export default function QRList() {
       <h2 className="text-xl font-bold mb-4">Códigos QR Generados</h2>
       <ul>
         {qrs.map((qr) => {
-          const qrUrl = `http://localhost:3060/api/redirect/${qr.code}`;
+          const qrUrl = `https://qrapivercel.vercel.app/api/redirect/${qr.code}`;
           
           console.log("URL generada en QR:", qrUrl); // 🚀 VERIFICAR QUE SEA LA CORRECTA
 

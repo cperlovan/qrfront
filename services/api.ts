@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:3060/api"; // Asegurar que usa el backend correcto
+const API_URL = "https://qrapivercel.vercel.app/api"; // Asegurar que usa el backend correcto
 
 export const createQR = async (data: { code: string; url: string }) => {
   return axios.post(`${API_URL}/qr`, data);
