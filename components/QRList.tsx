@@ -4,6 +4,7 @@ import { QRCodeCanvas } from "qrcode.react";
 import { useRouter } from "next/navigation";
 
 interface QRItem {
+  code: string;
   id: string;
   url: string;
 }
