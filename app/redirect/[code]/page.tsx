@@ -1,10 +1,10 @@
 "use client";
 import { useEffect } from "react";
-import { useRouter } from "next/navigation";
+//import { useRouter } from "next/navigation";
 import { getQRByCode } from "../../../services/api";
 
 export default function QRRedirectPage({ params }: { params: { code: string } }) {
-  const router = useRouter();
+ // const router = useRouter();
 
   useEffect(() => {
     const fetchQR = async () => {

@@ -3,8 +3,13 @@ import { getQRs } from "../services/api";
 import { QRCodeCanvas } from "qrcode.react";
 import { useRouter } from "next/navigation";
 
+interface QRItem {
+  id: string;
+  url: string;
+}
+
 export default function QRList() {
-  const [qrs, setQRs] = useState<any[]>([]);
+  const [qrs, setQRs] = useState<QRItem[]>([]);
   const router = useRouter();
 
   useEffect(() => {
